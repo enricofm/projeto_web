@@ -4,9 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="imgs/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
   <title>Create Account</title>
 </head>
 <body>
-  <h2>Esta página está em desenvolvimento.</h2>
+  <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Insira seu email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Insira sua senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Salvar login</label>
+                        </div>
+                        
+                        <a href="#" class="text">Esqueceu sua senha?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Entrar">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Não possui uma conta?
+                        <a href="#" class="text signup-link">Crie uma nova conta</a>
+                    </span>
+                </div>
+            </div>
+            <div class="form signup">
+                <span class="title">Registration</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="sigCheck">
+                            <label for="sigCheck" class="text">Remember me</label>
+                        </div>
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Não possui conta?
+                        <a href="#" class="text login-link">Crie uma conta</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script2.js"></script>
 </body>
 </html>
